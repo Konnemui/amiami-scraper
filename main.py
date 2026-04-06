@@ -18,8 +18,8 @@ class MyClient(discord.Client):
         data = json.loads(input_data)
         req = data["req"]
         Name = data["Name"]
-        StockStatus = data["StockStatus"]
-        result = f"request:{req}\n Name: {Name}\n Stock Status:{StockStatus}"
+
+        result = f"request:{req}\n Name: {Name}\n Stock Status: NA"
         
         if message.author == client.user:
             return
